@@ -1,5 +1,0 @@
-outs:
-- md5: 75781645eed34729d56d86403d8f89a8
-  size: 570544363
-  hash: md5
-  path: recommendation_system.pkl
