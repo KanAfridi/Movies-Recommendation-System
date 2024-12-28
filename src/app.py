@@ -2,29 +2,15 @@ import pandas as pd
 import pickle 
 import streamlit as st
 from api_poster import fetch_images
+import os, sys
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from utils.data_model import load_data, load_model
 
-# Load the trained model and data from pickle files
-def load_model():
-    try:
-        with open('Recommendation_system.pkl', 'rb') as f:
-            return pickle.load(f)
-    except FileNotFoundError:
-        st.error("Model not found. Please train the model first.")
-        return None
-
-def load_data():
-    try:
-        with open('recommendation_data.pkl', 'rb') as f:
-            return pickle.load(f)
-    except FileNotFoundError:
-        st.error("Data not found. Please preprocess the data first.")
-        return None
         
 # call the function 
 data = load_data()
 similarity_model = load_model()
-
 
 # Recommend similar movies based on the given movie title and id to fetch the poster 
 def movies_similarity(title): 
