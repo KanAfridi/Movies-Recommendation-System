@@ -2,11 +2,10 @@
 
 This project is focused on recommending movies using data obtained from the TMDb API. The dataset contains approximately 10,000 movies, providing a rich resource for building a recommendation system.  
 
-## Project Overview 🔍
-
 This application allows users to select a movie and receive **5 similar movies** based on the selected title.  
-
 To achieve this, I have implemented a variety of machine learning techniques, including:  
+
+Click here to open the WebApp[Movie Recommendation System](https://movies-recommendation-models.streamlit.app/)
 
 ### Text Preprocessing 🛠️
 To prepare the data for the model, I cleaned and processed it extensively. The raw data included a large number of list-format entries, which required custom techniques and functions to extract and format the relevant information.
