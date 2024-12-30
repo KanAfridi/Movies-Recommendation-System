@@ -5,7 +5,12 @@ This project is focused on recommending movies using data obtained from the TMDb
 This application allows users to select a movie and receive **5 similar movies** based on the selected title.  
 To achieve this, I have implemented a variety of machine learning techniques, including:  
 
-Click here to open the WebApp[Movie Recommendation System](https://movies-recommendation-models.streamlit.app/)
+### Click here to open the WebApp-> [Movie Recommendation System](https://movies-recommendation-models.streamlit.app/)
+### Software And Tools Requirements
+1. [Github Account](https:\\github.com)
+2. [Vs Code IDE](https:\\code.visualstudio.com)
+3. [Git Cli](https:https://git-scm.com/downloads)
+4. [Streamlit\io](https://docs.streamlit.io/)
 
 ### Text Preprocessing 🛠️
 To prepare the data for the model, I cleaned and processed it extensively. The raw data included a large number of list-format entries, which required custom techniques and functions to extract and format the relevant information.
@@ -30,6 +35,9 @@ To prepare the data for the model, I cleaned and processed it extensively. The r
 
 3. **Cosine Similarity:**
     - Cosine Similarity is a measure used to determine how similar two text documents (or vectors) are, by calculating the cosine of the angle between them.
+
+4. **Saving the train model** 
+    - I trained the file using cosine similarity and saved it. The file was about 550 MB, making it difficult to upload to GitHub. So, I uploaded it to Google Drive and reloaded it from there whenever I wanted to deploy the model on Streamlit. It takes a while depending on the internet speed, but once completed, it works perfectly fine.
 
 ## Key Features  
 
